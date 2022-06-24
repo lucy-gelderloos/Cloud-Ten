@@ -1,5 +1,7 @@
 # Team Agreement
 
+Erin Ranta, Austin Limanek, TJ Parker, Lucy Gelderloos
+
 ## Cooperation Plan:
 
 What we each bring to the group:
