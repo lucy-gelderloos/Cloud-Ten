@@ -4,11 +4,11 @@
 
 [Project Whiteboard](https://projects.invisionapp.com/freehand/document/MnH9x9T1g)
 
-[home page wireframe]
+[Home Page wireframe](img/home-page-wireframe.png)
 
-[calendar page wireframe]
+[Calendar Page wireframe](img/calendar-wireframe.png)
 
-[flash card page wireframe]
+[Flash Card Page wireframe](img/card-page-wireframe.png)
 
 ## User Stories
 
