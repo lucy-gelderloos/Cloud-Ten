@@ -1,5 +1,7 @@
 # Cloud Ten
 
+"A step above"
+
 ## Wireframes
 
 [Project Whiteboard](https://projects.invisionapp.com/freehand/document/MnH9x9T1g)
@@ -34,3 +36,7 @@
 
 Each day is its own object; create a month's worth of "day" objects & then add tasks/events in arrays to append to day object.
 Calendar month is also an object, populated with day objects. Calendar has its own properties (number of days, which weekday does the month start on). Days outside of the current month display as gray in the calendar.
+
+[Project Whiteboard](https://projects.invisionapp.com/freehand/document/MnH9x9T1g)
+
+[Domain Model](img/domain-model.png)
