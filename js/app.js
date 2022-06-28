@@ -1,5 +1,6 @@
 'use strict';
 
+
 // Cart constructor.
 const Month = function(allDay) {
   this.allDay = allDay;
@@ -29,3 +30,13 @@ const Day = function(product, quantity) {
 //   }
 //   // Note: You will have to decide what kind of parameter to pass in here!
 // };
+
+document.getElementById('add-item-button').addEventListener('click', function(){
+  document.getElementById('add-item-form').classList.remove('hidden');
+});
+
+document.getElementById('submit-item').addEventListener('click', function(event){
+  event.preventDefault();
+  document.getElementById('add-item-form').classList.add('hidden');
+});
+
