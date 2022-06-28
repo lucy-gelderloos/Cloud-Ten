@@ -1,4 +1,4 @@
-/* @import "reset.css"; */
+@import "reset.css";
 
 /* body {
     display: flex;
@@ -16,6 +16,20 @@
     background-image: repeating-linear-gradient(45deg, #09cbf1, #09cbf1 2em, #20d0eb 1em, #20d0eb 50%);
     background-size: 4em 4em;
   } 
+
+nav {
+    position:fixed;
+    width:100px;
+    height:100%;
+    background-color: rgb(240, 240, 205);
+    top:0px;
+    left:0px;
+}
+
+body {
+    /* position:relative; */
+    margin-left:100px;
+}
 
 fieldset {
     position: relative;
