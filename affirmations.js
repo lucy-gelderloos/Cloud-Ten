@@ -1,3 +1,4 @@
+//enter affirmations into array
 let affirm = []; 
 function generateNumberBetween(min, max) {
     return Math.round(Math.random() * (max - min)) + min;
