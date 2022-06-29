@@ -5,6 +5,9 @@
   <title>Cloud Ten Calendar</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" type="image/svg" href="img/favicon.svg"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -13,22 +16,30 @@
 
     </header>
     <main>
-        <table class="adjMonth" id="anteTable"></table>
-        <table id="basisTable"></table>
-        <table class="adjMonth" id="postTable"></table>
-
-
         <nav>
-            <a href="index.html">Float Home</a>
+            <nav>
+                <div>
+                  <a href="index.html">Float Home</a>
+                  <a href="" id="addItemLink">Add to Calendar</a>
+                  <a href="">Float to Cloud Cards</a>
+              </div>
+              <img src="img/sheep.svg" />
+              <img src="img/sheep.svg" />
+              <img src="img/sheep.svg" />
+              <img src="img/sheep.svg" />
+            </nav>
         </nav>
+
+
+        <div id="previewMonths">
+            <table class="adjMonth" id="anteTable"></table>
+            <table id="basisTable"></table>
+            <table class="adjMonth" id="postTable"></table>
+        </div>
+
     </header>
     <main>
-        <div id="cal-title">
-            <h1 id="cal-month-year"></h1>
-            <button id="add-item-button">Add new calendar item</button>
-        </div>
-        
-        <table id="cal-table"></table>
+
 
         <div id="add-item-form" class="hidden">
             <form id="newOpus">
@@ -65,15 +76,6 @@
                     <input type="submit" id="submit-item" value="Add Item">
                 </fieldset>
             </form>
-        </div>
-        <div id="calendar">
-
-        </div>
-        <div id="month-preview-previous">
-
-        </div>
-        <div id="month-preview-next">
-
         </div>
         <p>Static table for testing</p>
         <table id="task-test">

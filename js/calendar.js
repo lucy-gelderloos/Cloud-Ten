@@ -53,7 +53,8 @@ function headCreate (monthObj, index){
   let headRow = document.createElement('tr');
   headRow.setAttribute('class', 'calHead');
   table[index].appendChild(headRow);
-  let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  // let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  let days = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'];
   for(let i = 0; i < days.length; i++){
     let headEl = document.createElement('td');
     headEl.setAttribute('class', 'headEl');
@@ -195,7 +196,7 @@ function deleteCarousel(){
 cloudCarousel = carouselMonths(cloudValue);
 printCloudCarousel(cloudCarousel);
 
-document.getElementById('add-item-button').addEventListener('click', function(){
+document.getElementById('addItemLink').addEventListener('click', function(){
   document.getElementById('add-item-form').classList.remove('hidden');
 });
 
@@ -229,7 +230,6 @@ function printOpus (){
   }
 }
 
-
 document.getElementById('newOpus').addEventListener('submit', function(event){
   event.preventDefault();
   document.getElementById('add-item-form').classList.add('hidden');
@@ -240,7 +240,7 @@ document.getElementById('newOpus').addEventListener('submit', function(event){
   if(type === ''){type = 'task';}
 
   let check = new Date(date);
-  
+
   cloudCalendar.userCal[cloudValue].allDay[0].task.push(opus);
 
   printOpus();
