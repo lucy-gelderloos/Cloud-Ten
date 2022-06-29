@@ -53,11 +53,11 @@ document.getElementById('addItemLink').addEventListener('click', function(){
   document.getElementById('add-item-form').classList.remove('hidden');
 });
 
-// Hides Add New Item form when submit button is clicked
-document.getElementById('submit-item').addEventListener('click', function(event){
-  event.preventDefault();
-  document.getElementById('add-item-form').classList.add('hidden');
-});
+// // Hides Add New Item form when submit button is clicked
+// document.getElementById('submit-item').addEventListener('click', function(event){
+//   event.preventDefault();
+//   document.getElementById('add-item-form').classList.add('hidden');
+// });
 
 
 // Hides Add New Item form when cancel button is clicked
@@ -97,3 +97,5 @@ function findLabel(input) {
     }
   }
 }
+
+console.log('hi');
