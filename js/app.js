@@ -1,35 +1,51 @@
 'use strict';
 
-
-// Cart constructor.
-const Month = function(allDay) {
-  this.allDay = allDay;
+const Calendar = function(userCal) {
+  this.userCal = userCal;
 };
 
+const Month = function(allDay, year, month) {
+  this.allDay = allDay;
+  this.year = year;
+  this.month = month;
+};
 
-Month.prototype.addDay = function(product, quantity) {
-  let adding = new Day(product, quantity);
+const Day = function() {
+  this.task = [];
+  this.event = [];
+};
+
+Calendar.prototype.addMonth = function(monthObj) {
+  this.userCal.push(monthObj);
+};
+
+Month.prototype.addDay = function() {
+  let adding = new Day();
   this.allDay.push(adding);
 };
 
 Month.prototype.saveToLocalStorage = function() {
-  localStorage.setItem('month', JSON.stringify(this.allDay));
+  localStorage.setItem('thisMonth', JSON.stringify(this.allDay));
 };
 
-const Day = function(product, quantity) {
-  this.product = product;
-  this.quantity = quantity;
+const TaskCloud = function() {
+  this.taskCloud = [];
 };
 
-// Month.prototype.removeItem = function(item) {
-//   // TODO DONE: Fill in this instance method to remove one item from the cart.
-//   for(let i = 0; i < month.allDay.length; i++){
-//     if(month.allDay[i].product == item){
-//       month.allDay.splice(i, 1);
-//     }
-//   }
-//   // Note: You will have to decide what kind of parameter to pass in here!
-// };
+const EventCloud = function() {
+  this.eventCloud = [];
+};
+
+
+const Task = function(category, content) {
+  this.category = category;
+  this.content = content;
+};
+
+const Event = function(category, content) {
+  this.category = category;
+  this.content = content;
+};
 
 
 // Shows Add New Item form when button is clicked
@@ -42,6 +58,7 @@ document.getElementById('submit-item').addEventListener('click', function(event)
   event.preventDefault();
   document.getElementById('add-item-form').classList.add('hidden');
 });
+
 
 // Hides Add New Item form when cancel button is clicked
 document.getElementById('cancel-add').addEventListener('click', function(){
