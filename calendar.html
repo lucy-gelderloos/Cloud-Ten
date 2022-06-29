@@ -3,12 +3,72 @@
 
 <head>
   <title>Cloud Ten Calendar</title>
-  <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg" href="img/favicon.svg"/>
 </head>
 
 <body>
+    <header>
 
+    </header>
+    <main>
+        <table></table>
+        <nav>
+            <a href="index.html">Float Home</a>
+        </nav>
+        <div>
+            <button id="add-item-button">Add new calendar item</button>
+        </div>
+        <div id="add-item-form" class="hidden">
+            <form>
+                <fieldset>
+                    <input type="text" name="title" id="item-title" placeholder="Add new">
+                    <div class="align-legend">
+                        <legend>Date</legend>
+                        <input type="date" name="date" id="date">
+                    </div>
+                    <div class="align-legend">
+                        <legend>Type</legend>
+                        <ul>
+                            <li>
+                                <input type="radio" name="item-type" id="item-event" value="event">
+                                <label for="event-radio">Event</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="item-type" id="item-task" value="task">
+                                <label for="task-radio">Task</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="align-legend">
+                        <legend>Category</legend>
+                        <select name="category" id="item-category">
+                            <option value="Personal">Personal</option>
+                            <option value="School">School</option>
+                            <option value="Urgent">Urgent</option>
+                            <option value="Work">Work</option>
+                            <option value="Other">Other</option>
+                        </select>  
+                    </div>     
+                    <input type="submit" id="submit-item" value="Add Item">
+                </fieldset>
+            </form>
+        </div>
+        <div id="calendar">
+
+        </div>
+        <div id="month-preview-previous">
+
+        </div>
+        <div id="month-preview-next">
+
+        </div>
+    </main>
+    <footer>
+        <script src="js/app.js"></script>
+        <script src="./js/calendar.js"></script>
+    </footer>
 </body>
 
+</body>
 </html>

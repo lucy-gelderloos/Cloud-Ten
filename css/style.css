@@ -6,7 +6,6 @@ color: #fff;
 text-align: center;
 border: #09cbf1;
 
-
 }
 
   body {
@@ -93,6 +92,20 @@ border: #09cbf1;
 
 
 
+nav {
+    position:fixed;
+    width:100px;
+    height:100%;
+    background-color: rgb(240, 240, 205);
+    top:0px;
+    left:0px;
+}
+
+body {
+    /* position:relative; */
+    margin-left:100px;
+}
+
 fieldset {
     position: relative;
     top: 680px;
@@ -108,8 +121,101 @@ fieldset {
 
 
 
+#add-item-button {
+    border:none;
+    background-color:cornflowerblue;
+    padding:7px;
+    cursor:pointer;
+}
 
+#add-item-button:hover {
+    background-color: rgb(135, 169, 233);
+}
 
+#add-item-form {
+    width:250px;
+    margin: 30px auto;
+    border: 1px solid black;
+}
 
+form ul {
+    display:flex;
+}
 
+legend {
+    text-align:center;
+    padding:3px 0;
+}
 
+.align-legend {
+    display:flex;
+    margin:5px auto;
+    width:240px;
+    justify-content: space-between;
+}
+
+input[type="date"] {
+    width:150px;
+    border-bottom:1px solid gray;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    outline:none;
+}
+
+label {
+    padding-right:20px;
+}
+
+select {
+    width:150px;
+    border-bottom:1px solid gray;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    outline:none;
+}
+
+input[type="text"] {
+    font-size:18px;
+    border-bottom:1px solid gray;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    width:230px;
+    outline:none;
+    margin:5px;
+}
+
+input[type="submit"] {
+    width:100%;
+    border:none;
+    background-color:cornflowerblue;
+    padding:7px;
+    cursor:pointer;
+}
+
+input[type="submit"]:hover {
+    background-color:rgb(135, 169, 233);
+}
+
+.hidden {
+    display:none;
+}
+
+#affirmation {
+    position: fixed;
+    padding: 5px;
+    right: 10%;
+    top: 5%;
+    margin: 0px;
+    box-shadow: 5px 5px 5px #777;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    transition: opacity 1s;
+    transition-timing-function: linear;
+}
+
+#affirmation:hover {
+    opacity: 0.05;
+}
