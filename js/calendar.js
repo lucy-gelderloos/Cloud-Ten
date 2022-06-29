@@ -41,11 +41,13 @@ function loadMonth(monthObj) {
   month = new Month(days, monthObj.getFullYear(), monthObj.getMonth() + 1);
 }
 
+
 function headCreate (monthObj, index){
   //Adding the month name at the top of the calendar
   let title = document.createElement('caption');
   title.textContent = monthObj.toLocaleString('default', {month: 'long'}) + ', ' + monthObj.getFullYear();
   table[index].appendChild(title);
+
 
   //Adding the names of the week in the first row
   let headRow = document.createElement('tr');
@@ -171,6 +173,7 @@ function printCloudCarousel(array){
   }
 }
 
+
 function deleteCarousel(){
   let anteTable = document.getElementById('anteTable');
   while (anteTable.firstChild) {
@@ -267,3 +270,8 @@ document.getElementById('postTable').addEventListener('click', function(event){
 console.log(month.allDay);
 console.log(month);
 console.log(cloudCalendar);
+
+genCalendar();
+
+document.getElementById('cal-month-year').appendChild(document.createTextNode(`${monthName} ${now.getFullYear()}`));
+

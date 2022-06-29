@@ -10,17 +10,26 @@
 <body>
     <header>
 
+
     </header>
     <main>
         <table class="adjMonth" id="anteTable"></table>
         <table id="basisTable"></table>
         <table class="adjMonth" id="postTable"></table>
+
+
         <nav>
             <a href="index.html">Float Home</a>
         </nav>
-        <div>
+    </header>
+    <main>
+        <div id="cal-title">
+            <h1 id="cal-month-year"></h1>
             <button id="add-item-button">Add new calendar item</button>
         </div>
+        
+        <table id="cal-table"></table>
+
         <div id="add-item-form" class="hidden">
             <form id="newOpus">
                 <fieldset>
@@ -51,7 +60,8 @@
                             <option value="Work">Work</option>
                             <option value="Other">Other</option>
                         </select>  
-                    </div>     
+                    </div>
+                    <button id="cancel-add">Cancel</button>     
                     <input type="submit" id="submit-item" value="Add Item">
                 </fieldset>
             </form>
@@ -65,6 +75,37 @@
         <div id="month-preview-next">
 
         </div>
+        <p>Static table for testing</p>
+        <table id="task-test">
+            <tr class="calRow">
+                <td class="thisMonth">
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="task1">
+                            <label for="task1">Test task 1</label>
+                        </li>
+                        <li>    
+                            <input type="checkbox" name="task2">
+                            <label for="task2">Test task 2</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="task3">
+                            <label for="task3">Test task 3</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="task4">
+                            <label for="task4">Test task 4</label>
+                        </li>
+                    </ul>
+                </td>
+                <td class="thisMonth"></td>
+                <td class="thisMonth"></td>
+                <td class="thisMonth"></td>
+                <td class="thisMonth"></td>
+                <td class="thisMonth"></td>
+                <td class="thisMonth"></td>
+            </tr>
+        </table>
     </main>
     <footer>
         <script src="js/app.js"></script>
