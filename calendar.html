@@ -12,7 +12,9 @@
 
     </header>
     <main>
-        <table></table>
+        <table class="adjMonth" id="anteTable"></table>
+        <table id="basisTable"></table>
+        <table class="adjMonth" id="postTable"></table>
         <nav>
             <a href="index.html">Float Home</a>
         </nav>
@@ -20,7 +22,7 @@
             <button id="add-item-button">Add new calendar item</button>
         </div>
         <div id="add-item-form" class="hidden">
-            <form>
+            <form id="newOpus">
                 <fieldset>
                     <input type="text" name="title" id="item-title" placeholder="Add new">
                     <div class="align-legend">
@@ -31,11 +33,11 @@
                         <legend>Type</legend>
                         <ul>
                             <li>
-                                <input type="radio" name="item-type" id="item-event" value="event">
+                                <input type="radio" name="itemType" id="item-event" value="event">
                                 <label for="event-radio">Event</label>
                             </li>
                             <li>
-                                <input type="radio" name="item-type" id="item-task" value="task">
+                                <input type="radio" name="itemType" id="item-task" value="task">
                                 <label for="task-radio">Task</label>
                             </li>
                         </ul>
