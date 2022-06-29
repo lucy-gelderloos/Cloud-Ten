@@ -1,21 +1,96 @@
 @import "reset.css";
 
-/* body {
-    display: flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    align-items:stretch;
-  }
-  
-  .box {
-    flex: 1 1 auto;
-    
-  } */
+h1 {
+font-size: 80px;
+color: #fff;
+text-align: center;
+border: #09cbf1;
+
+}
 
 body {
     background-image: repeating-linear-gradient(45deg, #09cbf1, #09cbf1 2em, #20d0eb 1em, #20d0eb 50%);
     background-size: 4em 4em;
-  } 
+  }
+
+  .box {
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    background-color: #fff;
+    left: 360px;
+    top: 160px;
+    color: rgb(5, 31, 64);
+    padding: 60px;
+    border: dotted 20px rgb(246, 235, 76);
+    border-radius: 10%;
+    font-size: large;
+    font-family: monosten;
+  }
+
+  .box2 {
+    position: absolute;
+    height: 100px;
+    width: 150px;
+    background-color: #fff;
+    left: 870px;
+    top: 40px;
+    color: rgb(5, 31, 64);
+    padding: 60px;
+    border: dotted 20px #09cbf1;
+    border-radius: 10%;
+    font-size: large;
+    font-family: monosten;
+
+
+  }
+
+  .box3 {
+    position: absolute;
+    height: 100px;
+    width: 150px;
+    background-color: #fff;
+    left: 870px;
+    top: 375px;
+    color: rgb(5, 31, 64);
+    padding: 60px;
+    border: dotted 20px rgb(246, 235, 76);
+    border-radius: 10%;
+    font-size: large;
+    font-family: monosten;
+
+}
+.box4 {
+  position: absolute;
+    height: 200px;
+    width: 350px;
+    background-color: #fff;
+    left: 300px;
+    top: 550px;
+    color: rgb(5, 31, 64);
+    padding: 60px;
+    border: dotted 20px #09cbf1;
+    border-radius: 10%;
+    font-size: large;
+    font-family: monosten;
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
 
 nav {
     position:fixed;
@@ -34,6 +109,7 @@ body {
 fieldset {
     position: relative;
     top: 680px;
+    left: 880px;
     width: 170px;
     border: solid;
     border-color: white;
@@ -43,49 +119,6 @@ fieldset {
 }
 
 
-.dropbtn {
-    position:relative;
-    left: 700px;
-    top: 600px;
-    background-color: white;
-    color: #09cbf1;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #09cbf1;}
 
 .headEl {
     width:14%;
@@ -255,10 +288,28 @@ td {
     display:none;
 }
 
+
 .strikethrough {
     text-decoration: line-through;
 }
 
 #task-test td {
     width:14%;
+
+#affirmation {
+    position: fixed;
+    padding: 5px;
+    right: 10%;
+    top: 5%;
+    margin: 0px;
+    box-shadow: 5px 5px 5px #777;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    transition: opacity 1s;
+    transition-timing-function: linear;
+}
+
+#affirmation:hover {
+    opacity: 0.05;
+
 }
