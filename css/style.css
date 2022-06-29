@@ -8,7 +8,7 @@ border: #09cbf1;
 
 }
 
-  body {
+body {
     background-image: repeating-linear-gradient(45deg, #09cbf1, #09cbf1 2em, #20d0eb 1em, #20d0eb 50%);
     background-size: 4em 4em;
   }
@@ -120,31 +120,90 @@ fieldset {
 
 
 
+.headEl {
+    width:14%;
+    height:2em;
+    vertical-align: middle;
+    text-align:center;
+}
+
+table {
+    margin:10px auto;
+    border-spacing: 10px;
+    border-collapse: separate;
+    width:900px;
+}
+
+th, td {
+    background-image: linear-gradient(45deg, #cdeff7, white);
+    padding:5px;
+    border-radius: 7px;
+}
+
+td {
+    height:100px;
+}
+
+.adjMonth {
+    background-image: linear-gradient(45deg,#9ac2cb, #d4d3d3);
+}
+
+#cal-title {
+    width:900px;
+    display:flex;
+    margin:10px auto;
+    align-items: center;
+}
+
+#cal-title h1 {
+    margin-left:10px;
+}
+
+#cal-title button {
+    margin-left:auto;
+    margin-right:10px;
+}
 
 #add-item-button {
     border:none;
-    background-color:cornflowerblue;
-    padding:7px;
+    background-color:#fff200;
+    padding:10px;
     cursor:pointer;
+    border-radius: 5px;
 }
 
 #add-item-button:hover {
-    background-color: rgb(135, 169, 233);
+    background-color: #fef882;
 }
 
 #add-item-form {
     width:250px;
-    margin: 30px auto;
-    border: 1px solid black;
+    margin: auto;
+    border-radius:.5em;
+    background-color:white;
+    position:fixed;
+    left:50%;
+    top:30%;
+    margin:0 0 0 -75px;
+    z-index:10;
+    padding:5px;
+    box-shadow: 0 0 200px 100px #888888ba;
 }
 
-form ul {
+#add-item-form ul {
     display:flex;
 }
 
-legend {
+#add-item-form legend {
     text-align:center;
     padding:3px 0;
+}
+
+#add-item-form fieldset {
+    top:0;
+    width:250px;
+    padding:0;
+    border:none;
 }
 
 .align-legend {
@@ -154,7 +213,7 @@ legend {
     justify-content: space-between;
 }
 
-input[type="date"] {
+#add-item-form input[type="date"] {
     width:150px;
     border-bottom:1px solid gray;
     border-top:none;
@@ -163,11 +222,15 @@ input[type="date"] {
     outline:none;
 }
 
-label {
+#add-item-form input[type="date"]:focus {
+    background-color: #bbdfe7;
+}
+
+#add-item-form label {
     padding-right:20px;
 }
 
-select {
+#add-item-form select {
     width:150px;
     border-bottom:1px solid gray;
     border-top:none;
@@ -176,7 +239,11 @@ select {
     outline:none;
 }
 
-input[type="text"] {
+#add-item-form select:focus {
+    background-color: #bbdfe7;
+}
+
+#add-item-form input[type="text"] {
     font-size:18px;
     border-bottom:1px solid gray;
     border-top:none;
@@ -187,21 +254,47 @@ input[type="text"] {
     margin:5px;
 }
 
-input[type="submit"] {
-    width:100%;
-    border:none;
-    background-color:cornflowerblue;
-    padding:7px;
-    cursor:pointer;
+#add-item-form input[type="text"]:focus {
+    background-color:#bbdfe7;
 }
 
-input[type="submit"]:hover {
-    background-color:rgb(135, 169, 233);
+#add-item-form input[type="submit"] {
+    width:60%;
+    border:none;
+    background-color:#09cbf1;
+    padding:7px;
+    cursor:pointer;
+    margin:20px 0 5px 0;
+    /* display:inline-block; */
+    border-radius:3px;
+}
+
+#add-item-form input[type="submit"]:hover {
+    background-color:#20d0eb;
+}
+
+#add-item-form button {
+    width:30%;
+    border:none;
+    background-color:#bbdfe7;
+    padding:7px;
+    cursor:pointer;
+    /* display:inline-block; */
+    margin:20px 10px 5px 5px;
+    border-radius:3px;
 }
 
 .hidden {
     display:none;
 }
+
+
+.strikethrough {
+    text-decoration: line-through;
+}
+
+#task-test td {
+    width:14%;
 
 #affirmation {
     position: fixed;
@@ -218,4 +311,5 @@ input[type="submit"]:hover {
 
 #affirmation:hover {
     opacity: 0.05;
+
 }
