@@ -30,7 +30,8 @@ let days = dayArray(thisMonth);
 
 console.log(days);
 
-let table = document.querySelector('table');
+// let table = document.querySelector('table');
+let table = document.getElementById('cal-table');
 
 function headCreate (){
   let headRow = document.createElement('tr');
@@ -137,3 +138,5 @@ function genCalendar(){
 }
 
 genCalendar();
+
+document.getElementById('cal-month-year').appendChild(document.createTextNode(`${monthName} ${now.getFullYear()}`));
