@@ -169,3 +169,20 @@ input[type="submit"]:hover {
 .hidden {
     display:none;
 }
+
+#affirmation {
+    position: fixed;
+    padding: 5px;
+    right: 10%;
+    top: 5%;
+    margin: 0px;
+    box-shadow: 5px 5px 5px #777;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    transition: opacity 1s;
+    transition-timing-function: linear;
+}
+
+#affirmation:hover {
+    opacity: 0.05;
+}
