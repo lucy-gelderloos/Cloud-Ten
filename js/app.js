@@ -49,7 +49,7 @@ const Event = function(category, content) {
 
 
 // Shows Add New Item form when button is clicked
-document.getElementById('add-item-button').addEventListener('click', function(){
+document.getElementById('addItemLink').addEventListener('click', function(){
   document.getElementById('add-item-form').classList.remove('hidden');
 });
 

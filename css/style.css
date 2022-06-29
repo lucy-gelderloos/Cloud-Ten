@@ -11,6 +11,10 @@ border: #09cbf1;
 body {
     background-image: repeating-linear-gradient(45deg, #09cbf1, #09cbf1 2em, #20d0eb 1em, #20d0eb 50%);
     background-size: 4em 4em;
+    font-family:'Varela Round',serif;
+    margin-left:100px;
+    /* width:700px; */
+    margin:auto;
   }
 
   .box {
@@ -25,7 +29,6 @@ body {
     border: dotted 20px rgb(246, 235, 76);
     border-radius: 10%;
     font-size: large;
-    font-family: monosten;
   }
 
   .box2 {
@@ -40,9 +43,6 @@ body {
     border: dotted 20px #09cbf1;
     border-radius: 10%;
     font-size: large;
-    font-family: monosten;
-
-
   }
 
   .box3 {
@@ -57,9 +57,8 @@ body {
     border: dotted 20px rgb(246, 235, 76);
     border-radius: 10%;
     font-size: large;
-    font-family: monosten;
-
 }
+
 .box4 {
   position: absolute;
     height: 200px;
@@ -72,25 +71,7 @@ body {
     border: dotted 20px #09cbf1;
     border-radius: 10%;
     font-size: large;
-    font-family: monosten;
-
-
-
-
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
 
 nav {
     position:fixed;
@@ -99,11 +80,37 @@ nav {
     background-color: rgb(240, 240, 205);
     top:0px;
     left:0px;
+    border-radius: 0 10% 10% 0;
+    /* padding:100px 5px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
-body {
-    /* position:relative; */
-    margin-left:100px;
+nav div {
+    margin-top: 60px;
+}
+
+nav a {
+    background-color:#099dbb;
+    margin: 5px;
+    display:block;
+    border-radius:5px;
+    text-decoration: none;
+    padding:5px;
+    text-align: center;
+    color:white;
+}
+
+nav a:hover {
+    background-color: #20d0eb;
+}
+
+nav img {
+    width:150px;
+    /* object-fit:contain; */
+    /* margin-top:200%; */
 }
 
 fieldset {
@@ -118,11 +125,8 @@ fieldset {
     padding: 20px;
 }
 
-
-
 .headEl {
     width:14%;
-    height:2em;
     vertical-align: middle;
     text-align:center;
 }
@@ -140,15 +144,36 @@ th, td {
     border-radius: 7px;
 }
 
-td {
+#basisTable td {
     height:100px;
+}
+
+#basisTable .headEl {
+    height:2em;
+}
+
+#anteTable, #postTable {
+    width:100px;
+}
+
+#anteTable:active, #postTable:active {  
+    transition-delay: 1s;
+}
+
+#anteTable, #postTable th, td {
+    height:10px;
+}
+
+#previewMonths {
+    display:flex;
+    align-items:center;
 }
 
 .adjMonth {
     background-image: linear-gradient(45deg,#9ac2cb, #d4d3d3);
 }
 
-#cal-title {
+/* #cal-title {
     width:900px;
     display:flex;
     margin:10px auto;
@@ -162,7 +187,7 @@ td {
 #cal-title button {
     margin-left:auto;
     margin-right:10px;
-}
+} */
 
 #add-item-button {
     border:none;
@@ -170,6 +195,7 @@ td {
     padding:10px;
     cursor:pointer;
     border-radius: 5px;
+    font-family:'Varela Round',serif;
 }
 
 #add-item-button:hover {
@@ -178,13 +204,13 @@ td {
 
 #add-item-form {
     width:250px;
-    margin: auto;
+    /* margin: auto; */
     border-radius:.5em;
     background-color:white;
     position:fixed;
-    left:50%;
+    /* left:50%; */
     top:30%;
-    margin:0 0 0 -75px;
+    /* margin:0 0 0 -75px; */
     z-index:10;
     padding:5px;
     box-shadow: 0 0 200px 100px #888888ba;
@@ -295,6 +321,7 @@ td {
 
 #task-test td {
     width:14%;
+}
 
 #affirmation {
     position: fixed;
