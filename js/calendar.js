@@ -53,8 +53,11 @@ function headCreate (monthObj, index){
   let headRow = document.createElement('tr');
   headRow.setAttribute('class', 'calHead');
   table[index].appendChild(headRow);
-  // let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-  let days = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'];
+  let days;
+  if(table[index].id !== 'basisTable'){
+    days = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
+  } else {
+    days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];}
   for(let i = 0; i < days.length; i++){
     let headEl = document.createElement('td');
     headEl.setAttribute('class', 'headEl');

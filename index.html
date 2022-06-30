@@ -10,53 +10,69 @@
   <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- <div class="box-two"></div> -->
- <h1>CLOUD TEN</h1>
+
+  <header>
+    <nav>
+      <img src="img/sun.svg" />
+      <img src="img/cloud1.svg" />
+        <div>
+          <a href="calendar.html">Float to Calendar</a>
+          <a href="" id="addItemLink">Add to Calendar</a>
+          <a href="">Float to Cloud Cards</a>
+      </div>
+      <img src="img/cloud2.svg" />
+      <img src="img/sheep.svg" />
+    </nav>
+</header>
+ 
+
   <main>
+    <h1>CLOUD TEN</h1>
     <div class="box">Calendar Preview! What is on Deck for Today?</div>
     <div class="box2">Words to Inspire (Affirmations for You)</div>
     <div class="box3">Events & Up and coming Flash Card Topics!</div>
     <div class="box4">Resources: Updated Frequently, Plentiful Topics!</div>
-  
 
-    <header>
-        <nav>
-            <div>
-              <a href="calendar.html">Float to Calendar</a>
-              <a href="" id="addItemLink">Add to Calendar</a>
-              <a href="">Float to Cloud Cards</a>
-          </div>
-          <img src="img/sheep.svg" />
-          <img src="img/sheep.svg" />
-          <img src="img/sheep.svg" />
-          <img src="img/sheep.svg" />
-        </nav>
-    </header>
-    <main>
+    <div id="add-item-form" class="hidden">
+      <form id="newOpus">
+          <fieldset>
+              <input type="text" name="title" id="item-title" placeholder="Add new">
+              <div class="align-legend">
+                  <legend>Date</legend>
+                  <input type="date" name="date" id="date">
+              </div>
+              <div class="align-legend">
+                  <legend>Type</legend>
+                  <ul>
+                      <li>
+                          <input type="radio" name="itemType" id="item-event" value="event">
+                          <label for="event-radio">Event</label>
+                      </li>
+                      <li>
+                          <input type="radio" name="itemType" id="item-task" value="task">
+                          <label for="task-radio">Task</label>
+                      </li>
+                  </ul>
+              </div>
+              <div class="align-legend">
+                  <legend>Category</legend>
+                  <select name="category" id="item-category">
+                      <option value="Personal">Personal</option>
+                      <option value="School">School</option>
+                      <option value="Urgent">Urgent</option>
+                      <option value="Work">Work</option>
+                      <option value="Other">Other</option>
+                  </select>  
+              </div>
+              <button id="cancel-add">Cancel</button>     
+              <input type="submit" id="submit-item" value="Add Item">
+      </form>
+    
 
-        <div id="affirmation">
-          <h2>Daily Affirmations</h2>
-
-        </div>
-        <div id="calendar-preview">
-
-        </div>
-        <div id="resources">
-
-        </div>
-        <div id="upcoming">
-
-        </div>
-        <div id="contact">
-
-        </div>
-    </main>
-    <footer>
-
-  <div class="box two"></div>
-
-  <fieldset>
-    <form actionid="form"></form>
+  </main>
+  <footer>
+    <form actionid="form">
+    <fieldset>
     <legend>Sign up for an Informational Session!</legend>
       <div id="add-item-form" class="hidden">
         <label for="name">Your Name</label>
@@ -79,6 +95,7 @@
   </fieldset>
 <br>
 </form>
+
 
     </footer>
 
