@@ -5,6 +5,7 @@ let cloudCarousel;
 let cloudValue = 0; //Used to define the inMonth: 0 => basis; x∊[-n,-1] => anteMonth; x∊[1,+n] => postMonth
 
 let basis = new Date();
+console.log(basis);
 let basisYear = basis.getFullYear(); //Defines the basis year, which helps with anteMonth and postMonth calculations
 let basisMonth = basis.getMonth(); //Defines the basis month, which helps with anteMonth and postMonth calculations
 let month; //the most recently created month object
@@ -234,13 +235,18 @@ function deleteCarousel(){
 }
 
 function printOpus (year, month, day){
-  let eventArray = cloudCalendar.userCal[1].allDay[day].event;
-  let taskArray = cloudCalendar.userCal[1].allDay[day].task;
-  let listSpace = document.getElementById('id' + day + year + month);
+  let inMonth = basisMonth + cloudValue + 1;
+  console.log(inMonth);
+  console.log(month);
+  let eventArray = cloudCalendar.userCal[month].allDay[day - 1].event;
+  let taskArray = cloudCalendar.userCal[month].allDay[day - 1].task;
+  let listSpace = document.getElementById('id' + day + year + inMonth);
 
   if(eventArray.length > 1 || taskArray.length > 1){
-    console.log(cloudCalendar.userCal);
-    listSpace.removeChild(listSpace.firstChild);
+    while(listSpace.firstChild){
+      console.log(cloudCalendar.userCal);
+      listSpace.removeChild(listSpace.firstChild);
+    }
   }
 
   let ulEl = document.createElement('ul');
@@ -266,12 +272,12 @@ function printOpus (year, month, day){
       input.setAttribute('type', 'checkbox');
       input.setAttribute('name', 'task' + (i+1));
       input.addEventListener('change',strikeThrough);
-      
+
       let label = document.createElement('label');
       label.setAttribute('for', 'task' + (i+1));
       label.textContent = taskArray[i];
       liEl.appendChild(label);
-      
+
       //liEl.textContent = taskArray[i];
     }
     // Find all checkboxes in document
@@ -305,23 +311,29 @@ document.getElementById('newOpus').addEventListener('submit', function(event){
   let type = event.target.itemType.value;
   let category = event.target.category.value;
   if(type === ''){type = 'task';}
+  console.log(date);
 
-  let check = new Date(date);
-  let inputDay = check.getDate() + 1;
-  let inputMonth = check.getMonth() + 1;
+  let [y, m, d] = date.split('-');
+
+  let check = new Date(y, m-1, d);
+  let inputDay = check.getDate();
+  let inputMonth = check.getMonth();
   let inputYear = check.getFullYear();
   console.log(inputDay);
   console.log(inputMonth);
-
+  console.log('What?');
+  console.log(check);
+  let inMonth = findBasis() + cloudValue + 1;
+console.log(inMonth);
   if(type === 'task'){
-    cloudCalendar.userCal[1].allDay[inputDay].task.push(opus);
+    cloudCalendar.userCal[inMonth].allDay[inputDay - 1].task.push(opus);
   }
   else{
-    cloudCalendar.userCal[1].allDay[inputDay].event.push(opus);
+    cloudCalendar.userCal[inMonth].allDay[inputDay - 1].event.push(opus);
   }
+console.log(cloudCalendar);
 
-
-  printOpus(inputYear, inputMonth, inputDay);
+  printOpus(inputYear, inMonth, inputDay);
 });
 
 //Handles click event on the anteMonth element
@@ -334,8 +346,19 @@ document.getElementById('anteTable').addEventListener('click', function(event){
 
   cloudCarousel = carouselMonths(cloudValue);
   printCloudCarousel(cloudCarousel, 0);
+  console.log(findBasis());
+  console.log(cloudCalendar);
 
-  printOpus();
+  let inMonthIndex = findBasis() + cloudValue + 1;
+  let inMonth = basisMonth + cloudValue + 1;
+  console.log(inMonth);
+  let length = getDaysInMonth(2022, inMonth, 0);
+  console.log(length+'inMonth');
+  //let inMonthYear = cloudCalendar.userCal[inMonth].year;
+  for(let i = 0; i < length; i++){
+    printOpus(2022, inMonthIndex , i+1);
+  }
+
 });
 
 //Handles click event on the postMonth element
@@ -345,12 +368,37 @@ document.getElementById('postTable').addEventListener('click', function(event){
 
   deleteCarousel();
   console.log(cloudCalendar);
+  console.log(findBasis());
 
-  let wind = carouselMonths(cloudValue);
-  printCloudCarousel(wind, 1);
+  cloudCarousel = carouselMonths(cloudValue);
+  printCloudCarousel(cloudCarousel, 1);
+  let inMonthIndex = findBasis() + cloudValue + 1;
+  let inMonth = basisMonth + cloudValue + 1;
+  console.log(inMonthIndex);
+  let length = getDaysInMonth(2022, inMonth, 0);
+  console.log(length+'inMonth');
+  //let inMonthYear = cloudCalendar.userCal[inMonth].year;
+  for(let i = 0; i < length; i++){
+    printOpus(2022, inMonthIndex, i+1);
+  }
 
-  printOpus();
 });
 
+function findBasis(){
+  let index;
+  for(let i = 0; i < cloudCalendar.userCal.length; i++){
+    console.log(cloudCalendar.userCal[i].month);
+    console.log();
+    console.log(cloudCalendar.userCal[i].month);
+    console.log(cloudCalendar.userCal[i].month);
+    if((cloudCalendar.userCal[i].month === basisMonth) && (cloudCalendar.userCal[i].year === basisYear)){
+      index = i;
+      break;
+    }
+  }
+  return index;
+}
+
+console.log(findBasis());
 
 //document.getElementById('cal-month-year').appendChild(document.createTextNode(`${monthName} ${now.getFullYear()}`));
