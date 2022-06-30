@@ -73,16 +73,16 @@ border-radius: inherit;
 
 p {
     position: absolute;
-    left:700px;
+    left:760px;
     top: 110px;
     color: #FFFFFF;
-    width: 300px;
-    height: 100px;
+    width: 250px;
+    height: 200px;
     border: 10px solid #fff;
-    font-size: medium;
+    font-size: x-large;
     border-radius: 15%;
     text-align: center;
-    padding: 10px;
+    padding: 30px;
 }
 
 .cloud3 {
@@ -231,27 +231,27 @@ border-radius: inherit;
     left:950px;
     top: 590px;
     color: #FFFFFF;
-    width: 300px;
-    height: 100px;
+    width: 350px;
+    height: 200px;
     border: 10px solid #fff;
-    font-size: medium;
+    font-size: x-large;
     border-radius: 15%;
     text-align: center;
-    padding: 10px;
+    padding: 30px;
 }
 
 #resource {
     position: absolute;
     left:200px;
-    top: 620px;
+    top: 570px;
     color: #FFFFFF;
     width: 300px;
-    height: 100px;
+    height: 200px;
     border: 10px solid #fff;
-    font-size: medium;
+    font-size: x-large;
     border-radius: 15%;
     text-align: center;
-    padding: 10px;
+    padding: 30px;
 
 
 
@@ -261,7 +261,7 @@ border-radius: inherit;
 
 fieldset {
     position: relative;
-    top: 680px;
+    top: 380px;
     left: 880px;
     width: 170px;
     border: solid;
@@ -322,6 +322,7 @@ fieldset {
     border-width: 15px;
     border-radius: 20%;
     padding: 20px;
+
 }
 
 legend{
