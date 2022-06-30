@@ -121,7 +121,34 @@ nav a:hover {
 }
 
 nav img {
+
+    width:150px;
+    /* object-fit:contain; */
+    /* margin-top:200%; */
+}
+
+fieldset {
+    position: relative;
+    top: 680px;
+    left: 880px;
+    width: 170px;
+    border: solid;
+    border-color: white;
+    border-style: bold thick;
+    border-width: 15px;
+    border-radius: 20%;
+    padding: 20px;
+
     width:70%;
+
+}
+
+legend{
+    text-align: center;
+}
+.placeholder {
+    
+    text-align: center;
 }
 
 .headEl {
