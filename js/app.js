@@ -15,8 +15,13 @@ const Day = function() {
   this.event = [];
 };
 
-Calendar.prototype.addMonth = function(monthObj) {
-  this.userCal.push(monthObj);
+Calendar.prototype.addMonth = function(monthObj, shift) {
+  if(shift){
+    this.userCal.push(monthObj);
+  }
+  else{
+    this.userCal.unshift(monthObj);
+  }
 };
 
 Month.prototype.addDay = function() {
@@ -74,9 +79,9 @@ let checkBoxArray = document.querySelectorAll('input[type=checkbox]');
 let labelArray = document.querySelectorAll('label');
 
 // Add event listener to each checkbox
-for(let i=0; checkBoxArray.length; i++){
-  checkBoxArray[i].addEventListener('change',strikeThrough);
-}
+//for(let i=0; checkBoxArray.length; i++){
+//  checkBoxArray[i].addEventListener('change',strikeThrough);
+//}
 
 // Add or remove strikethrough class when box is checked or unchecked
 function strikeThrough() {
