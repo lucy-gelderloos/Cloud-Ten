@@ -9,13 +9,17 @@ border: #09cbf1;
 }
 
 body {
-    background-image: repeating-linear-gradient(45deg, #09cbf1, #09cbf1 2em, #20d0eb 1em, #20d0eb 50%);
-    background-size: 4em 4em;
+    height:100%;
     font-family:'Varela Round',serif;
     margin: 0 auto;
+    display:block;
+    margin:auto;
+    background-image: repeating-linear-gradient(45deg, #09cbf1, #09cbf1 2em, #20d0eb 1em, #20d0eb 50%);
+    background-size: 4em 4em;
   }
 
 main {
+
     display:block;
     margin-left:100px;
 }
@@ -245,11 +249,10 @@ caption {
 
 #add-item-form fieldset {
     top:0;
+    left: 0;
     width:250px;
     padding:0;
     border:none;
-    top: 0;
-    left: 0;
 }
 
 .align-legend {
