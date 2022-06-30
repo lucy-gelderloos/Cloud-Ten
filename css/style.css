@@ -18,6 +18,7 @@ body {
     background-size: 4em 4em;
   }
 
+
 main {
     display:block;
     margin-left:100px;
@@ -37,46 +38,249 @@ main {
     font-size: large;
   }
 
-  .box2 {
-    position: absolute;
-    height: 100px;
-    width: 150px;
-    background-color: #fff;
-    left: 870px;
-    top: 40px;
-    color: rgb(5, 31, 64);
-    padding: 60px;
-    border: dotted 20px #09cbf1;
-    border-radius: 10%;
-    font-size: large;
-  }
 
-  .box3 {
-    position: absolute;
-    height: 100px;
-    width: 150px;
-    background-color: #fff;
-    left: 870px;
-    top: 375px;
-    color: rgb(5, 31, 64);
-    padding: 60px;
-    border: dotted 20px rgb(246, 235, 76);
-    border-radius: 10%;
-    font-size: large;
+
+  .cloud {
+    margin-top: 100px;
+    margin-left: 300px;
+    width: 350px;
+    height: 120px;
+    background: #ECEFF1;
+    box-shadow: 10px 10px rgba(0,0,0,0.2);
+    border-radius: 100px;
 }
 
-.box4 {
-  position: absolute;
-    height: 200px;
+.cloud:after, .cloud:before {
+content:"";
+position: relative;
+display: inline-block;
+background: inherit;
+border-radius: inherit;
+
+}
+.cloud::after {
+    width: 100px;
+    height: 100px;
+    top: -220px;
+    left: 50px;
+}
+.cloud::before {
+    width: 180px;
+    height: 180px;
+    top: -70px;
+    left: 130px;
+ }
+
+    p {
+        position: absolute;
+        left:700px;
+        top: 110px;
+        color: #FFFFFF;
+        width: 300px;
+        height: 100px;
+        border: 10px solid #fff;
+        font-size: medium;
+        border-radius: 15%;
+        text-align: center;
+        padding: 10px;
+    }
+
+   
+
+
+
+
+
+
+    
+      /* border: 10px black;
+      text-align: center; */
+
+        /* width: 200px;
+        height: 50px;
+        border-width: 15px;
+        position: absolute;
+        left:690px;
+        top:120px;
+        border-width: 15px;
+        text-align: center;;
+        font-size: 35px; */
+
+    
+       
+
+.cloud3 {
+    margin-top: 200px;
+    margin-left: 500px;
     width: 350px;
-    background-color: #fff;
-    left: 300px;
-    top: 550px;
-    color: rgb(5, 31, 64);
-    padding: 60px;
-    border: dotted 20px #09cbf1;
-    border-radius: 10%;
-    font-size: large;
+    height: 120px;
+    background: #ECEFF1;
+    box-shadow: 10px 10px rgba(0,0,0,0.2);
+    border-radius: 100px;
+}
+
+.cloud3:after, .cloud3:before {
+content:"";
+position: relative;
+display: inline-block;
+background: inherit;
+border-radius: inherit;
+
+}
+.cloud3::after {
+    width: 100px;
+    height: 100px;
+    top: -220px;
+    left: 50px;
+}
+.cloud3::before {
+    width: 180px;
+    height: 180px;
+    top: -70px;
+    left: 130px;
+ }
+
+ .cloud4 {
+    margin-top: 220px;
+    margin-left:120px;
+    width: 350px;
+    height: 120px;
+    background: #ECEFF1;
+    box-shadow: 10px 10px rgba(0,0,0,0.2);
+    border-radius: 100px;
+    padding: 10px;
+}
+
+.cloud4:after, .cloud4:before {
+content:"";
+position: relative;
+display: inline-block;
+background: inherit;
+border-radius: inherit;
+
+}
+.cloud4::after {
+    width: 100px;
+    height: 100px;
+    top: -220px;
+    left: 50px;
+}
+.cloud4::before {
+    width: 180px;
+    height: 180px;
+    top: -70px;
+    left: 130px;
+ }
+ 
+.clouds, .cloud_two{
+    animation: move 6s ease infinite;
+ border-radius: 50%;
+  position: absolute;
+  top: 50%; left: 50%;
+  margin-top: -30px;
+  margin-left: -30px;
+  background: #FFFFFF;
+  height: 60px; width: 60px;
+  box-shadow:
+        #FFFFFF 65px -15px 0 -5px, 
+        #FFFFFF 25px -25px, 
+        #FFFFFF 30px 10px, 
+        #FFFFFF 60px 15px 0 -10px, 
+        #FFFFFF 85px 5px 0 -5px;
+}
+
+.cloud_two{
+    top: 52%; left: 31%;
+  animation-duration: 8s;
+}
+
+@keyframes move{
+  50% { transform: translateY(-15px); }
+}
+
+
+ .cloud5, .cloud_six{
+    animation: move 6s ease infinite;
+ border-radius: 50%;
+  position: absolute;
+  top: 60%; left: 65%;
+  margin-top: -60px;
+  margin-left: -70px;
+  background: #FFFFFF;
+  height: 60px; width: 60px;
+  box-shadow:
+        #FFFFFF 65px -15px 0 -5px, 
+        #FFFFFF 25px -25px, 
+        #FFFFFF 30px 10px, 
+        #FFFFFF 60px 15px 0 -10px, 
+        #FFFFFF 85px 5px 0 -5px;
+}
+
+.cloud_two{
+    top: 52%; left: 31%;
+  animation-duration: 8s;
+}
+
+@keyframes move{
+  50% { transform: translateY(-15px); }
+}
+
+.cloud7, .cloud_eight{
+    animation: move 6s ease infinite;
+ border-radius: 50%;
+  position: absolute;
+  top: 30%; left: 30%;
+  margin-top: -45px;
+  margin-left: -450px;
+  background: #FFFFFF;
+  height: 60px; width: 60px;
+  box-shadow:
+        #FFFFFF 65px -15px 0 -5px, 
+        #FFFFFF 25px -25px, 
+        #FFFFFF 30px 10px, 
+        #FFFFFF 60px 15px 0 -10px, 
+        #FFFFFF 85px 5px 0 -5px;
+}
+
+.cloud_two{
+    top: 52%; left: 31%;
+  animation-duration: 8s;
+}
+
+@keyframes move{
+  50% { transform: translateY(-15px); }
+}
+#card {
+    position: absolute;
+    left:950px;
+    top: 590px;
+    color: #FFFFFF;
+    width: 300px;
+    height: 100px;
+    border: 10px solid #fff;
+    font-size: medium;
+    border-radius: 15%;
+    text-align: center;
+    padding: 10px;
+}
+
+#resource {
+    position: absolute;
+    left:200px;
+    top: 620px;
+    color: #FFFFFF;
+    width: 300px;
+    height: 100px;
+    border: 10px solid #fff;
+    font-size: medium;
+    border-radius: 15%;
+    text-align: center;
+    padding: 10px;
+
+
+
+
+
 }
 
 fieldset {
@@ -133,8 +337,8 @@ nav :first-child {
 
 fieldset {
     position: relative;
-    top: 680px;
-    left: 880px;
+    bottom: 130px;
+    left: 900px;
     width: 170px;
     border: solid;
     border-color: white;
@@ -354,10 +558,12 @@ caption {
 }
 
 #affirmation {
+    width: 240px;
+    height: 60px;
     position: fixed;
     padding: 5px;
-    right: 10%;
-    top: 5%;
+    right: 15%;
+    top: 15%;
     margin: 0px;
     box-shadow: 5px 5px 5px #777;
     background-color: rgba(255, 255, 255, 0.5);
