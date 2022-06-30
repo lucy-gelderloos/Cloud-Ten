@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="161.80914"
+   height="160.42853"
+   viewBox="0 0 42.812 42.446714"
+   version="1.1"
+   id="svg19192"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   sodipodi:docname="sun.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview19194"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="2"
+     inkscape:cx="60.75"
+     inkscape:cy="98.75"
+     inkscape:window-width="1128"
+     inkscape:window-height="690"
+     inkscape:window-x="-6"
+     inkscape:window-y="-6"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g10204"
+     showguides="true">
+    <sodipodi:guide
+       position="21.494314,21.931548"
+       orientation="1,0"
+       id="guide10184"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs19189">
+    <inkscape:path-effect
+       effect="powerclip"
+       id="path-effect10198"
+       is_visible="true"
+       lpeversion="1"
+       inverse="true"
+       flatten="false"
+       hide_clip="false"
+       message="Use fill-rule evenodd on &lt;b&gt;fill and stroke&lt;/b&gt; dialog if no flatten result after convert clip to paths." />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath10194">
+      <circle
+         style="display:none;fill:#ff6600;fill-opacity:1;stroke:none;stroke-width:15.8837;stroke-dasharray:none;stroke-opacity:1"
+         id="circle10196"
+         cx="68.703835"
+         cy="61.743401"
+         r="83.389839"
+         d="m 152.09367,61.743401 a 83.389839,83.389839 0 0 1 -83.389835,83.389839 83.389839,83.389839 0 0 1 -83.38984,-83.389839 83.389839,83.389839 0 0 1 83.38984,-83.38984 83.389839,83.389839 0 0 1 83.389835,83.38984 z" />
+      <path
+         id="lpe_path-effect10198"
+         style="fill:#ff6600;fill-opacity:1;stroke:none;stroke-width:15.8837;stroke-dasharray:none;stroke-opacity:1"
+         class="powerclip"
+         d="M -51.701469,-56.714259 H 189.70147 V 182.71426 H -51.701469 Z M 152.09367,61.743401 a 83.389839,83.389839 0 0 0 -83.389835,-83.38984 83.389839,83.389839 0 0 0 -83.38984,83.38984 83.389839,83.389839 0 0 0 83.38984,83.389839 83.389839,83.389839 0 0 0 83.389835,-83.389839 z" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2"
+     transform="translate(-45.548611,-22.10365)">
+    <g
+       id="g10204">
+      <path
+         sodipodi:type="star"
+         style="fill:#f5ea4c;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-dasharray:none;stroke-opacity:1"
+         id="path10098"
+         inkscape:flatsided="false"
+         sodipodi:sides="14"
+         sodipodi:cx="69"
+         sodipodi:cy="63"
+         sodipodi:r1="113.11278"
+         sodipodi:r2="80.224251"
+         sodipodi:arg1="0.52359878"
+         sodipodi:arg2="0.76344347"
+         inkscape:rounded="0"
+         inkscape:randomized="0"
+         d="m 166.95854,119.55639 -39.99977,-1.08828 5.75993,37.99005 L 97.152332,138.12241 85.858584,174.8494 61.769982,142.89779 35.659423,171.08749 27.819626,131.84844 -7.9362281,145.91753 2.0255479,107.1628 -36.293716,104.32474 -10.503418,73.730185 -43.796491,54.547071 -7.2857577,38.172322 -28.958539,6.4436107 11.041233,7.5318855 5.2813039,-30.458163 l 35.5663641,18.335752 11.293748,-36.726991 24.088602,31.951609 26.110562,-28.189701 7.83979,39.2390575 35.75586,-14.0690965 -9.96178,38.75473 38.31927,2.838065 -25.7903,30.594553 33.29307,19.183114 -36.51073,16.374749 z"
+         transform="matrix(0.18501062,0,0,0.18501062,54.188879,31.671337)"
+         clip-path="url(#clipPath10194)"
+         inkscape:path-effect="#path-effect10198" />
+      <circle
+         style="fill:#f5ea4c;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-dasharray:none;stroke-opacity:1"
+         id="path10044"
+         cx="66.723351"
+         cy="42.868961"
+         r="13.890625" />
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Layer 3"
+     transform="translate(-7.0367073,-5.8643357)" />
+</svg>
