@@ -71,43 +71,19 @@ border-radius: inherit;
     left: 130px;
  }
 
-    p {
-        position: absolute;
-        left:700px;
-        top: 110px;
-        color: #FFFFFF;
-        width: 300px;
-        height: 100px;
-        border: 10px solid #fff;
-        font-size: medium;
-        border-radius: 15%;
-        text-align: center;
-        padding: 10px;
-    }
-
-   
-
-
-
-
-
-
-    
-      /* border: 10px black;
-      text-align: center; */
-
-        /* width: 200px;
-        height: 50px;
-        border-width: 15px;
-        position: absolute;
-        left:690px;
-        top:120px;
-        border-width: 15px;
-        text-align: center;;
-        font-size: 35px; */
-
-    
-       
+p {
+    position: absolute;
+    left:700px;
+    top: 110px;
+    color: #FFFFFF;
+    width: 300px;
+    height: 100px;
+    border: 10px solid #fff;
+    font-size: medium;
+    border-radius: 15%;
+    text-align: center;
+    padding: 10px;
+}
 
 .cloud3 {
     margin-top: 200px;
@@ -360,7 +336,7 @@ legend{
     border-spacing: 10px;
     border-collapse: separate;
     /* width:900px; */
-    min-width:600px;
+    min-width:800px;
     align-self:flex-start;
 }
 
