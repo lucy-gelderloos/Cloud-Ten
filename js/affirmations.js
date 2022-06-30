@@ -1,3 +1,5 @@
+'use strict';
+
 //enter affirmations into array
 let affirm = ['Placeholder Text1', 'Placeholder Text2'];
 function generateNumberBetween(min, max) {
