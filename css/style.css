@@ -121,10 +121,7 @@ nav a:hover {
 }
 
 nav img {
-
-    width:150px;
-    /* object-fit:contain; */
-    /* margin-top:200%; */
+    width:80%;
 }
 
 fieldset {
@@ -138,9 +135,6 @@ fieldset {
     border-width: 15px;
     border-radius: 20%;
     padding: 20px;
-
-    width:70%;
-
 }
 
 legend{
@@ -151,13 +145,6 @@ legend{
     text-align: center;
 }
 
-.headEl {
-    width:14%;
-    vertical-align: middle;
-    text-align:center;
-    font-size: 0.9em;
-}
-
 #basisTable {
     margin:10px auto;
     border-spacing: 10px;
@@ -166,18 +153,34 @@ legend{
     min-width:600px;
 }
 
-#basisTable th, td {
-    background-image: linear-gradient(45deg, #cdeff7, white);
-    padding:5px;
-    border-radius: 7px;
+#basisTableDiv {
+    background-color:#e4e4e4ba;
+    box-shadow: 0 0 5px 5px #e4e4e4ba;
+    z-index:5;
+    border-radius: 10px;
 }
 
 #basisTable td {
+    padding:5px;
+    border-radius: 7px;
     height:100px;
+    font-size:0.8em;
+}
+
+td.thisMonth {
+    background-image: linear-gradient(45deg, #cdeff7, white);
+}
+
+.headEl {
+    vertical-align: middle;
+    text-align:center;
+    background-image: linear-gradient(45deg, #cdeff7, white);
 }
 
 #basisTable .headEl {
     height:1.5em;
+    font-size:1em;
+    width:14%;
 }
 
 #anteTable, #postTable {
@@ -186,16 +189,17 @@ legend{
     border-spacing:2px;
     border-collapse:separate;
     background-color:none;
+    /* margin-top: 35%; */
 }
 
-#anteTable td, th {
+#anteTable td {
     height:10px;
     padding:2px;
     border-radius:2px;
     text-align:center;
 }
 
-#postTable td, th {
+#postTable td {
     height:10px;
     padding:2px;
     border-radius:2px;
@@ -204,7 +208,8 @@ legend{
 
 #previewMonths {
     display:flex;
-    align-items:center;
+    align-items:baseline;
+    margin:auto;
 }
 
 td.adjMonth {
