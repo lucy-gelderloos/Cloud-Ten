@@ -122,7 +122,16 @@ fieldset {
     border-color: white;
     border-style: bold thick;
     border-width: 15px;
+    border-radius: 20%;
     padding: 20px;
+}
+
+legend{
+    text-align: center;
+}
+.placeholder {
+    
+    text-align: center;
 }
 
 .headEl {
