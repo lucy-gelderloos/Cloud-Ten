@@ -17,40 +17,66 @@ body {
     margin:auto;
   }
 
-/* This one (cloud) si prob going to be replaced */
 
-.cloud {
+
+
+  .cloud {
     margin-top: 100px;
-    margin-left: 250px;
+    margin-left: 300px;
     width: 350px;
     height: 120px;
     background: #ECEFF1;
     box-shadow: 10px 10px rgba(0,0,0,0.2);
     border-radius: 100px;
+}
+
+.cloud:after, .cloud:before {
+content:"";
+position: relative;
+display: inline-block;
+background: inherit;
+border-radius: inherit;
 
 }
-.cloud::after, .cloud::before {
-    content:"";
-    position: relative;
-    display: inline-block;
-    background: inherit;
-    border-radius: inherit;
-    
-    }
-    .cloud::after {
-        width: 100px;
+.cloud::after {
+    width: 100px;
+    height: 100px;
+    top: -220px;
+    left: 50px;
+}
+.cloud::before {
+    width: 180px;
+    height: 180px;
+    top: -70px;
+    left: 130px;
+ }
+
+    p {
+        position: absolute;
+        left:700px;
+        top: 110px;
+        color: #FFFFFF;
+        width: 300px;
         height: 100px;
-        top: -220px;
-        left: 50px;
+        border: 10px solid #fff;
+        font-size: medium;
+        border-radius: 15%;
+        text-align: center;
+        padding: 10px;
     }
-    .cloud::before {
-        width: 180px;
-        height: 180px;
-        top: -70px;
-        left: 130px;
-     }
-    p1{
-        width: 201px;
+
+   
+
+
+
+
+
+
+    
+      /* border: 10px black;
+      text-align: center; */
+
+        /* width: 200px;
         height: 50px;
         border-width: 15px;
         position: absolute;
@@ -58,9 +84,9 @@ body {
         top:120px;
         border-width: 15px;
         text-align: center;;
-        font-size: 35px;
+        font-size: 35px; */
 
-    } 
+    
        
 
 .cloud3 {
@@ -157,9 +183,9 @@ border-radius: inherit;
     animation: move 6s ease infinite;
  border-radius: 50%;
   position: absolute;
-  top: 60%; left: 60%;
+  top: 60%; left: 65%;
   margin-top: -60px;
-  margin-left: -60px;
+  margin-left: -70px;
   background: #FFFFFF;
   height: 60px; width: 60px;
   box-shadow:
@@ -204,6 +230,45 @@ border-radius: inherit;
 @keyframes move{
   50% { transform: translateY(-15px); }
 }
+#card {
+    position: absolute;
+    left:950px;
+    top: 590px;
+    color: #FFFFFF;
+    width: 300px;
+    height: 100px;
+    border: 10px solid #fff;
+    font-size: medium;
+    border-radius: 15%;
+    text-align: center;
+    padding: 10px;
+}
+
+#resource {
+    position: absolute;
+    left:200px;
+    top: 620px;
+    color: #FFFFFF;
+    width: 300px;
+    height: 100px;
+    border: 10px solid #fff;
+    font-size: medium;
+    border-radius: 15%;
+    text-align: center;
+    padding: 10px;
+
+
+
+
+
+}
+
+
+
+
+
+
+
 
 
 nav {
