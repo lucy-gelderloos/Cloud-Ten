@@ -55,14 +55,15 @@ document.getElementById('addItemLink').addEventListener('click', function(event)
 });
 
 // Hides Add New Item form when submit button is clicked
-// document.getElementById('submit-item').addEventListener('click', function(event){
-//   event.preventDefault();
-//   document.getElementById('add-item-form').classList.add('hidden');
-// });
+document.getElementById('submit-item').addEventListener('click', function(event){
+  event.preventDefault();
+  document.getElementById('add-item-form').classList.add('hidden');
+});
 
 
 // Hides Add New Item form when cancel button is clicked
-document.getElementById('cancel-add').addEventListener('click', function(){
+document.getElementById('cancel-add').addEventListener('click', function(event){
+  event.preventDefault();
   document.getElementById('add-item-form').classList.add('hidden');
 });
 

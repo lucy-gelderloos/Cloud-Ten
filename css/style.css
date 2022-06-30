@@ -19,7 +19,6 @@ body {
   }
 
 main {
-
     display:block;
     margin-left:100px;
 }
@@ -128,6 +127,10 @@ nav img {
     width:80%;
 }
 
+nav :first-child {
+    align-self: flex-start;
+}
+
 fieldset {
     position: relative;
     top: 680px;
@@ -145,7 +148,6 @@ legend{
     text-align: center;
 }
 .placeholder {
-    
     text-align: center;
 }
 
@@ -153,15 +155,17 @@ legend{
     margin:10px auto;
     border-spacing: 10px;
     border-collapse: separate;
-    width:900px;
+    /* width:900px; */
     min-width:600px;
+    align-self:flex-start;
 }
 
 #basisTableDiv {
-    background-color:#e4e4e4ba;
-    box-shadow: 0 0 5px 5px #e4e4e4ba;
+    background-color:#06809949;
+    box-shadow: 5px 5px 15px 10px #0680996c;
     z-index:5;
     border-radius: 10px;
+    
 }
 
 #basisTable td {
@@ -193,27 +197,36 @@ td.thisMonth {
     border-spacing:2px;
     border-collapse:separate;
     background-color:none;
-    /* margin-top: 35%; */
 }
 
 #anteTable td {
     height:10px;
     padding:2px;
-    border-radius:2px;
+    border-radius:3px;
     text-align:center;
 }
 
 #postTable td {
     height:10px;
     padding:2px;
-    border-radius:2px;
+    border-radius:3px;
     text-align:center;
+}
+
+div#previewMonths {
+    margin: 40px auto 0 -100px;
 }
 
 #previewMonths {
     display:flex;
-    align-items:baseline;
-    margin:auto;
+    align-items: baseline;
+    justify-content:center;
+    column-gap: 2%;
+    flex-wrap: wrap;
+}
+
+#calH1 {
+    margin: 15px auto 20px -100px;
 }
 
 td.adjMonth {
@@ -355,4 +368,59 @@ caption {
 
 #affirmation:hover {
     opacity: 0.05;
+}
+
+@keyframes nudge {
+    0%, 100% {
+        transform: translate(0, 0);
+      }
+      
+      25% {
+        transform: translate(5px, 0);
+      }
+      
+      75% {
+        transform: translate(-5px, 0);
+      }
+    }
+
+.nudge {
+  animation: nudge 4s linear infinite;
+}
+
+.delay {
+    animation-duration: 5s;
+    animation-direction: reverse;
+}
+
+@keyframes grow {
+    0%, 100% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(1.05);
+    }
+    75% {
+      transform: scale(0.95);
+    }
+  }
+
+.grow:hover {
+    animation: grow .3s linear 3;
+}
+
+@keyframes wiggle {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(9deg);
+    }
+    75% {
+        transform: rotate(-8deg);
+    }
+}
+
+.wiggle:hover {
+    animation: wiggle .3s linear 2;
 }
