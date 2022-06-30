@@ -49,7 +49,8 @@ const Event = function(category, content) {
 
 
 // Shows Add New Item form when button is clicked
-document.getElementById('addItemLink').addEventListener('click', function(){
+document.getElementById('addItemLink').addEventListener('click', function(event){
+  event.preventDefault();
   document.getElementById('add-item-form').classList.remove('hidden');
 });
 
@@ -61,7 +62,8 @@ document.getElementById('submit-item').addEventListener('click', function(event)
 
 
 // Hides Add New Item form when cancel button is clicked
-document.getElementById('cancel-add').addEventListener('click', function(){
+document.getElementById('cancel-add').addEventListener('click', function(event){
+  event.preventDefault();
   document.getElementById('add-item-form').classList.add('hidden');
 });
 
@@ -97,3 +99,5 @@ function findLabel(input) {
     }
   }
 }
+
+console.log('hi');
