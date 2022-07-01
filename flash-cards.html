@@ -8,16 +8,51 @@
 </head>
 
 <body>
-  <form id="input" action="/flash-cards.html">
-    <div id="prevCardRender"></div>
-    <div id="cardRender">
+  <header>
+    <nav>
+        <img src="img/sun.svg" class="grow"/>
+        <img src="img/cloud1.svg" class="nudge" />
+          <div>
+            <a href="index.html">Float to Home</a>
+            <a id="addItemLink">Add to Calendar</a>
+            <a href="">Float to Cloud Cards</a>
+        </div>
+        <img src="img/cloud2.svg" class="nudge delay" />
+        <img src="img/sheep.svg" class="wiggle" />
+    </nav>
+</header>
+<main>        
+  <h1 id="calH1">Cloud Ten</h1>
+  <!-- <form id="input" action="/flash-cards.html"> -->
+  <div class="paper">
+    <h2>Cloud Cards</h2>
+    <div>
+      <button onclick="newCard()">New Card</button>
+      <button onclick="delCards()">Delete Cards</button>
+    </div>
+  </div>
+    <!-- <div id="cardRender">
         <label for="userAnswer">Answer: </label>
         <input id ='userAnswer' type="text" name="userAnswer">
-        <button type="button" onclick="checkAnswer()">Submit</button>
+        <button type="button" onclick="cardGame()">Submit</button>
+    </div> -->
+  <div class="paper"></div>
+    <div id="createBox">
+      <h2>Create Flashcard</h2>
+      <label for="question">Question</label>
+      <textarea id="question"></textarea>
+      <br>
+      <label for="answer">Answer</label>
+      <textarea id="answer"></textarea>
+      <div>
+        <button onclick="addFlashCard()">Save</button>
+        <button onclick="hideBox()">Close</button>
+      </div>
+      <div id="flashcard"></div>
     </div>
-    <div id="nextCardRender"></div>
-  </form>
-
+  </div>
+  <!-- </form> -->
+</main>
   <script src="js/flash-cards.js" ></script>
 </body>
 

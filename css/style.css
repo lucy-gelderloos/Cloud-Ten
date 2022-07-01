@@ -634,3 +634,7 @@ caption {
 .wiggle:hover {
     animation: wiggle .3s linear 2;
 }
+
+#answer:only-child {
+    display: none;
+}
