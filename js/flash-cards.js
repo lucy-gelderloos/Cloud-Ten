@@ -1,17 +1,15 @@
 'use strict';
 
 let answerReturn = 0;
-let lengthReturn = 0;
+let deck = [];
 
-function Deck(deckLength, question, answer) {
-  this.deckLength = deckLength,
+function Card(question, answer) {
   this.question = question,
   this.answer = answer,
-  this.cards = [];
 
   this.addCard = function() {
     for (let i = 0; i < this.deckLength; i++) {
-      this.cards.push(question);
+      deck.push(answer);
     }
   },
 
@@ -20,23 +18,26 @@ function Deck(deckLength, question, answer) {
     let cardEl = document.createTextNode(this.question);
     divEl.appendChild(cardEl);
     answerReturn = this.answer;
-    lengthReturn = this.deckLength;
   };
-
 }
-let checkAnswer = function() {
-  let answerInput = document.getElementById('userAnswer');
-  let score = 0;
-  for (let i = 0; i < lengthReturn; i++) {
+
+let score = 0;
+function checkAnswer() {
+  let answerInput = document.getElementById('userAnswer').value;
+  for (let i = 0; i <= deck.length; i++) {
     if (answerReturn === answerInput) {
       score++;
     }
-    console.log(score);
   }
-};
+  console.log(score);
+}
 
-let gMajor = new Deck(12, 'A B C D E F# G', 'G Major');
-gMajor.addCard();
-gMajor.renderCard();
+
+let majorScale = [new Card('A B C D E F# G', 'G Major'), new Card('A B C# D# E F# G#', 'A Major')];
+
+majorScale[0].addCard();
+majorScale[0].renderCard();
+
+
 
 checkAnswer();

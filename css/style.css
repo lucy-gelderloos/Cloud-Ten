@@ -85,6 +85,32 @@ p {
     padding: 30px;
 }
 
+/* #affirmation {
+    display: flex;
+    flex-direction: column;
+} */
+
+#affirmation p {
+    left: 0;
+    top: 40px;
+    color:black;
+    width: 90%;
+    height: auto;
+    font-size: 1em;
+    border:none;
+    padding: 10px;
+    /* text-align:center; */
+    margin:0;
+    /* vertical-align: middle; */
+    display: block;
+}
+
+#affirmation h2 {
+    text-align:center;
+    display:block;
+    font-weight: bold;
+}
+
 .cloud3 {
     margin-top: 200px;
     margin-left: 500px;
@@ -252,11 +278,11 @@ border-radius: inherit;
     border-radius: 15%;
     text-align: center;
     padding: 30px;
-
 }
 
 #one #two #three {
     color: #20d0eb;
+
     box-shadow: inset 0 0 0 0 #54b3d6;
     color: #54b3d6;
     margin: 0 -.25rem;
@@ -281,6 +307,7 @@ color: white;
 #three:hover {
     box-shadow: inset 300px 0 0 0 #54b3d6;
 color: white;
+
 }
 
 
@@ -299,7 +326,7 @@ fieldset {
 
 nav {
     position:fixed;
-    width:100px;
+    width:200px;
     height:98%;
     background-image: linear-gradient(0deg,  #52ee81, 10%, #09cbf1 30%);
     top:0px;
@@ -321,8 +348,10 @@ nav a {
     display:block;
     border-radius:5px;
     text-decoration: none;
-    padding:5px;
+    padding:15px 10px 5px 10px;
     text-align: center;
+    height: 2em;
+    font-size:1.2em;
 }
 
 nav a:hover {
@@ -562,7 +591,7 @@ caption {
 
 #affirmation {
     width: 240px;
-    height: 60px;
+    height: 120px;
     position: fixed;
     padding: 5px;
     right: 15%;
@@ -573,6 +602,7 @@ caption {
     border-radius: 20px;
     transition: opacity 1s;
     transition-timing-function: linear;
+    font-size: x-large;
 }
 
 #affirmation:hover {
@@ -632,4 +662,8 @@ caption {
 
 .wiggle:hover {
     animation: wiggle .3s linear 2;
+}
+
+main#flash-cards {
+    margin-left: 200px;
 }

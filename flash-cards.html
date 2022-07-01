@@ -8,12 +8,35 @@
 </head>
 
 <body>
+
+  <header>
+    <nav>
+        <img src="img/sun.svg" class="grow"/>
+        <img src="img/cloud1.svg" class="nudge" />
+          <div>
+            <a href="index.html">Float to Home</a>
+            <a id="addItemLink">Add to Calendar</a>
+            <a href="calendar.html">Float to Calendar</a>
+        </div>
+        <img src="img/cloud2.svg" class="nudge delay" />
+        <img src="img/sheep.svg" class="wiggle" />
+    </nav>
+</header>
+
+<main id="flash-cards">
   <form id="input" action="flash-cards.html">
+
+  <form id="input" action="/flash-cards.html">
+    <div id="prevCardRender"></div>
+
     <div id="cardRender">
-        Answer: <input type="text" name="userAnswer"><br>
-        <input type="button" onclick="checkAnswer()" value="Submit">
+        <label for="userAnswer">Answer: </label>
+        <input id ='userAnswer' type="text" name="userAnswer">
+        <button type="button" onclick="checkAnswer()">Submit</button>
     </div>
+    <div id="nextCardRender"></div>
   </form>
+</main>
 
   <script src="js/flash-cards.js" ></script>
 </body>
