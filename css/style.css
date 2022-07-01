@@ -664,6 +664,23 @@ caption {
     animation: wiggle .3s linear 2;
 }
 
+#flashcard {
+    width: 300px;
+    margin: 10px;
+    cursor: pointer;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+
+}
+
+#flashcard h3 {
+    background: white;
+    
+    text-align: center;
+    margin: 30px;
+}
+
 main#flash-cards {
     margin-left: 200px;
 }
+

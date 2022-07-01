@@ -1,43 +1,65 @@
 'use strict';
 
-let answerReturn = 0;
-let deck = [];
+let deck = localStorage.getItem('cards') ? JSON.parse(localStorage.getItem('cards')) : [];
 
-function Card(question, answer) {
-  this.question = question,
-  this.answer = answer,
+let flashcards = document.getElementById('flashcard');
+let createBox = document.getElementById('createBox');
 
-  this.addCard = function() {
-    for (let i = 0; i < this.deckLength; i++) {
-      deck.push(answer);
+function delCards() {
+  localStorage.clear();
+  flashcards.innerHTML = '';
+  deck = [];
+}
+
+function newCard() {
+  createBox.style.display = 'block';
+}
+function hideBox() {
+  createBox.style.display = 'none';
+}
+
+function renderCard(text) {
+  let divEl = document.createElement('div');
+  let questionEl = document.createElement('h3');
+  let answerEl = document.createElement('h3');
+
+  divEl.className = 'flashcard';
+
+  questionEl.textContent = text.userQuestion;
+
+  answerEl.setAttribute('style', 'color:red; display:none');
+  answerEl.textContent = text.userAnswer;
+
+  divEl.appendChild(questionEl);
+  divEl.appendChild(answerEl);
+
+  divEl.addEventListener('click', function() {
+    if(answerEl.style.display === 'none') {
+      answerEl.style.display = 'block';
+    } else {
+      answerEl.style.display = 'none';
     }
-  },
+  });
 
-  this.renderCard = function() {
-    let divEl = document.getElementById('cardRender');
-    let cardEl = document.createTextNode(this.question);
-    divEl.appendChild(cardEl);
-    answerReturn = this.answer;
+  let flash = document.getElementById('flashcard');
+  flash.appendChild(divEl);
+}
+
+deck.forEach(renderCard);
+
+function addFlashCard() {
+  let question = document.getElementById('question');
+  let answer = document.getElementById('answer');
+
+  let flashcardData = {
+    'userQuestion' : question.value,
+    'userAnswer' : answer.value
   };
+
+  deck.push(flashcardData);
+  localStorage.setItem('cards', JSON.stringify(deck));
+  renderCard(deck[deck.length - 1], deck.length - 1);
+  question.value = '';
+  answer.value = '';
 }
 
-let score = 0;
-function checkAnswer() {
-  let answerInput = document.getElementById('userAnswer').value;
-  for (let i = 0; i <= deck.length; i++) {
-    if (answerReturn === answerInput) {
-      score++;
-    }
-  }
-  console.log(score);
-}
-
-
-let majorScale = [new Card('A B C D E F# G', 'G Major'), new Card('A B C# D# E F# G#', 'A Major')];
-
-majorScale[0].addCard();
-majorScale[0].renderCard();
-
-
-
-checkAnswer();
