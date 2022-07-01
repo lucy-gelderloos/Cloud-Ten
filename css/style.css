@@ -71,20 +71,6 @@ border-radius: inherit;
     left: 130px;
  }
 
-p {
-    position: absolute;
-    left:760px;
-    top: 110px;
-    color: #FFFFFF;
-    width: 250px;
-    height: 200px;
-    border: 10px solid #fff;
-    font-size: x-large;
-    border-radius: 15%;
-    text-align: center;
-    padding: 30px;
-}
-
 /* #affirmation {
     display: flex;
     flex-direction: column;
@@ -93,7 +79,7 @@ p {
 #affirmation p {
     left: 0;
     top: 40px;
-    color:black;
+    color:white;
     width: 90%;
     height: auto;
     font-size: 1em;
@@ -109,6 +95,7 @@ p {
     text-align:center;
     display:block;
     font-weight: bold;
+    padding-top: 10px;
 }
 
 .cloud3 {
@@ -607,6 +594,7 @@ caption {
 
 #affirmation:hover {
     opacity: 0.05;
+    transition: opacity 1s;
 }
 
 @keyframes nudge {
@@ -683,4 +671,48 @@ caption {
 main#flash-cards {
     margin-left: 200px;
 }
+
+
+#gone {
+   display: fixed;
+   left: -1000px;
+}
+
+#epiView {
+    position: absolute;
+    left:760px;
+    top: 110px;
+    /* color: #FFFFFF; */
+    width: 400px;
+    height: 200px;
+    border: 10px solid #fff;
+    font-size: x-large;
+    border-radius: 15%;
+    text-align: left;
+    padding: 20px;
+}
+
+#previewTable {
+    margin:0px auto;
+    border-spacing: 10px;
+    border-collapse: separate;
+    /* width:900px; */
+    min-width:300px;
+    align-self:flex-start;
+    font-size: .8em;
+}
+
+#previewTable .headEl {
+    height:1.5em;
+    font-size:1em;
+    width:20%;
+}
+
+#previewTable td {
+    padding:5px;
+    border-radius: 7px;
+    height: 110px;
+    font-size:0.8em;
+}
+
 
