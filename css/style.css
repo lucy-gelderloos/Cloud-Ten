@@ -663,7 +663,9 @@ caption {
 
 #flashcard h3 {
     background: white;
-    
+    padding:10px;
+    border:none;
+    border-radius:10px;
     text-align: center;
     margin: 30px;
 }
@@ -715,4 +717,40 @@ main#flash-cards {
     font-size:0.8em;
 }
 
+.paper {
+    margin:auto;
+    width:300px;
+    display:flex;
+    padding: 10px;
+    justify-content: space-around;
 
+}
+
+.card-form {
+    text-align: center;
+    padding: 5px;
+}
+
+h2.card-form {
+    font-weight:bold;
+}
+
+#createBox label {
+    display:block;
+    /* width:300px; */
+    margin-top: 10px;
+    margin-left:40px;
+}
+
+#createBox {
+    /* display: flex; */
+    align-content: center;
+}
+
+#createBox textarea {
+    margin-left:40px;
+}
+
+#createBox button {
+    margin-left: 40px;
+}
