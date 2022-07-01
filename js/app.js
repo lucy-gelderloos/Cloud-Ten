@@ -24,14 +24,19 @@ Calendar.prototype.addMonth = function(monthObj, shift) {
   }
 };
 
+Calendar.prototype.saveToLocalStorage = function() {
+  // TODO DONE: Fill in this instance method to save the contents of the cart to localStorage
+  localStorage.setItem('epiOpus', JSON.stringify(this.userCal));
+};
+
 Month.prototype.addDay = function() {
   let adding = new Day();
   this.allDay.push(adding);
 };
 
-Month.prototype.saveToLocalStorage = function() {
-  localStorage.setItem('thisMonth', JSON.stringify(this.allDay));
-};
+// Month.prototype.saveToLocalStorage = function() {
+//   localStorage.setItem('thisMonth', JSON.stringify(this.allDay));
+// };
 
 const TaskCloud = function() {
   this.taskCloud = [];
@@ -105,4 +110,3 @@ function findLabel(input) {
   }
 }
 
-console.log('hi');
