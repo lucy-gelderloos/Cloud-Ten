@@ -280,9 +280,15 @@ border-radius: inherit;
     padding: 30px;
 }
 
+#one #two #three {
+    color: #20d0eb;
+
+}
+
+
 fieldset {
     position: relative;
-    top: 380px;
+    top: 300px;
     left: 880px;
     width: 170px;
     border: solid;
