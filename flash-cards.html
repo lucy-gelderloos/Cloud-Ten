@@ -5,6 +5,9 @@
   <title>Cloud Ten Flash Cards</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" type="image/svg" href="img/favicon.svg"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -22,19 +25,19 @@
     </nav>
 </header>
 
-<main>        
+<main id="flash-cards">        
   <h1 id="calH1">Cloud Ten</h1>
   <div class="paper">
-    <h2>Cloud Cards</h2>
+    <h2 class="card-form">Cloud Cards</h2>
     <div>
       <button onclick="newCard()">New Card</button>
       <button onclick="delCards()">Delete Cards</button>
     </div>
   </div>
 
-  <div class="paper"></div>
+  <div class="paper">
     <div id="createBox">
-      <h2>Create Flashcard</h2>
+      <h2 class="card-form">Create Flashcard</h2>
       <label for="question">Question</label>
       <textarea id="question"></textarea>
       <br>
