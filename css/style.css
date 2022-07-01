@@ -92,7 +92,7 @@ p {
 
 #affirmation p {
     left: 0;
-    top: 20px;
+    top: 40px;
     color:black;
     width: 90%;
     height: auto;
@@ -278,11 +278,6 @@ border-radius: inherit;
     border-radius: 15%;
     text-align: center;
     padding: 30px;
-
-
-
-
-
 }
 
 fieldset {
@@ -299,7 +294,7 @@ fieldset {
 
 nav {
     position:fixed;
-    width:100px;
+    width:200px;
     height:98%;
     background-image: linear-gradient(0deg,  #52ee81, 10%, #09cbf1 30%);
     top:0px;
@@ -321,8 +316,10 @@ nav a {
     display:block;
     border-radius:5px;
     text-decoration: none;
-    padding:5px;
+    padding:15px 10px 5px 10px;
     text-align: center;
+    height: 2em;
+    font-size:1.2em;
 }
 
 nav a:hover {
@@ -562,7 +559,7 @@ caption {
 
 #affirmation {
     width: 240px;
-    height: 60px;
+    height: 120px;
     position: fixed;
     padding: 5px;
     right: 15%;
@@ -573,6 +570,7 @@ caption {
     border-radius: 20px;
     transition: opacity 1s;
     transition-timing-function: linear;
+    font-size: x-large;
 }
 
 #affirmation:hover {
@@ -632,4 +630,8 @@ caption {
 
 .wiggle:hover {
     animation: wiggle .3s linear 2;
+}
+
+main#flash-cards {
+    margin-left: 200px;
 }
